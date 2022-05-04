@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+/*
+h1 {
+  background-image: url("./logo.png");
+  background-size: contain;
+}
+*/
+
+h1 img {
+    height: 40px;
+    width: 80px;
+    object-fit: cover;
+    vertical-align: middle;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.company-card {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.company-card.active {
+    color: red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.company-card.disabled {
+    color: gray;
 }
 
-.App-link {
-  color: #61dafb;
+.company-card a {
+    color: inherit;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.company-card .logo {
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.employee-list {
+    margin-top: 20px;
+}
+
+.company-card .employee {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.company-card .avatar {
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    display: inline-block;
+    height: 24px;
+    margin-right: 5px;
+    width: 24px;
+    background-size: cover;
+}
+
+.company-card img.badge {
+    width: 20px;
+    height: 20px;
 }
